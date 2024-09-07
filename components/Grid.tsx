@@ -38,15 +38,7 @@ const initializeGrid = () => {
 };
 
 export default function Grid({ pos, setPos }: GridProps) {
-  const {
-    health,
-    movementPoints,
-    actionPoints,
-    increaseHealth,
-    decreaseHealth,
-    increaseMovementPoints,
-    decreaseMovementPoints,
-  } = usePlayer();
+  const { movementPoints, decreaseMovementPoints } = usePlayer();
 
   const [grid, setGrid] = useState<CellData[]>([]);
 
