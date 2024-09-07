@@ -1,0 +1,39 @@
+.test {
+  display: grid;
+  grid-template-columns: repeat(15, 60px);
+  grid-template-rows: repeat(15, 45px);
+  transform: skew(-40deg);
+  transform-origin: center;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(152, 114, 9);
+  cursor: pointer;
+  color: white;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.even {
+  background-color: rgb(16, 100, 16);
+}
+
+.odd {
+  background-color: rgb(85, 100, 16);
+}
+
+.currentPosition {
+  background-color: rgb(255, 0, 0);
+}
+
+.highlight {
+  background-color: rgba(
+    0,
+    255,
+    0,
+    0.3
+  ); /* Couleur de surbrillance, ajuster selon les besoins */
+}
